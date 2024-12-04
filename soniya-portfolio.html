@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <title>Home - Soniya Taneja</title>
+    <style>
+        #typed {
+            font-weight: bold;
+            color: white;
+            font-size: 1.5em;
+            display: inline-block;
+          }
+          
+          .highlight {
+            color: var(--color-brand2);
+          }
+          
+    </style>
 </head>
 <body>
     <header>
@@ -23,9 +38,11 @@
 
     <main id="home">
         <div class="container">
-            <h1>I'm a <span class="highlight">Web Developer</span> from KIET Ghaziabad, UP</h1>
+            <h1>I'm <span class="highlight">Soniya Taneja</span></h1>
             <img src="https://static.vecteezy.com/system/resources/previews/003/815/991/non_2x/female-programmer-doing-software-coding-free-vector.jpg" alt="A web developer working on a laptop" class="web-developer-img">
-            <p>Let's build something amazing together.</p>
+              <p>
+                <span id="typed" class="highlight"></span>
+              </p>
             <!-- <a href="services.html" class="btn">Explore My Services</a> -->
         </div>
     </main>
@@ -40,5 +57,22 @@
             </ul>
         </div>
     </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Typed("#typed", {
+              strings: ["a Web Developer.", "a Data Analyst.", "a Designer."], // Text to display
+              typeSpeed: 50, // Typing speed in milliseconds
+              backSpeed: 30, // Backspacing speed
+              loop: true,    // Loop the animation
+              backDelay: 1500, // Delay before erasing text
+              startDelay: 500, // Delay before typing starts
+            });
+          });
+          
+
+
+    </script>
 </body>
 </html>
